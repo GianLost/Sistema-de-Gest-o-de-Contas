@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="author" content="Ezequiel Figueiredo">
+    <meta name="description" content="Sistema web para gerenciamento de contas para empresas e negocios.">
+    <meta name="keywords"
+        content="Sistema para gerenciamento de contas, Sistemas de gerenciamento para empresas, Gerenciamento de despesas, Controle financeiro empresarial, Software de gestão financeira, Ferramenta de controle de gastos, Administração de finanças corporativas, Controle de fluxo de caixa, Software de finanças corporativas.">
+
+    <title> SGC - Sistema de Gerenciamento de Contas </title>
+
+    <!-- Importação das folhas de estilo css do bootstrap -->
+    <link rel="stylesheet" href="/src/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Importação do css do plug-in Datatable -->
+    <link rel="stylesheet" type="text/css" href="/src/wwwroot/lib/data-tables/css/dataTables.bootstrap5.min.css"
+        asp-append-version="true" />
+
+        <!-- Importação do css personalizado -->
+    <link rel="stylesheet" href="/src/wwwroot/css/style.css">
+
+    <!-- Importação dos ícones do bootstrap icons -->
+    <link rel="stylesheet" href="/src/wwwroot/lib/bootstrap-icons/font/bootstrap-icons.min.css" />
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <div class="container">
+
+                <a class="navbar-brand" href="/Index.html">SGC - Sistema de Gerenciamento de Contas</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Index.html">Início</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="contasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Fornecedores
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="contasDropdown">
+                                <li><a class="dropdown-item" href="/src/pages/Fornecedor/Cadastro.html">Cadastro de
+                                        Fornecedores</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="/src/pages/Fornecedor/Index.html">Lista de
+                                        Fornecedores</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="contasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="contasDropdown">
+                                <li><a class="dropdown-item" href="#">Listade Contas</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Contas Pagas</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="relatoriosDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Relatórios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="relatoriosDropdown">
+                                <li><a class="dropdown-item" href="#">Relatório Mensal</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Relatório Anual</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <div class="card mb-5 mt-5">
+            <div class="card-header bg-primary text-light">
+                <span class="fw-bold">Listagem de Fornecedores</span>
+            </div>
+
+            <div class="card-body">
+
+                <div class="table-responsive">
+
+                    <table class="table table-sm table-bordered table-striped table-light table-style duo-table">
+
+                        <thead class="table-light bg-danger border-light text-primary">
+
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">CNPJ</th>
+                                <th scope="col">IE</th>
+                                <th scope="col">CPF</th>
+                                <th scope="col">RG</th>
+                                <th scope="col">Celular</th>
+                                <th scope="col">Telefone</th>
+                                <th scope="col">Endereço</th>
+                                <th scope="col">Número</th>
+                                <th scope="col">Bairro</th>
+                                <th scope="col">Estado</th>
+                                <th scope="col">Cidade</th>
+                                <th scope="col">CEP</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Data de Nascimento</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square fs-6"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash fs-6"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="table-light border-light">
+                                <td scope="row">1</td>
+                                <td scope="row">Fornecedor A</td>
+                                <td scope="row">1234567890</td>
+                                <td scope="row">123456789</td>
+                                <td scope="row">123.456.789-01</td>
+                                <td scope="row">1234567-8</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">(99) 9999-9999</td>
+                                <td scope="row">Rua Exemplo</td>
+                                <td scope="row">123</td>
+                                <td scope="row">Bairro Exemplo</td>
+                                <td scope="row">Estado Exemplo</td>
+                                <td scope="row">Cidade Exemplo</td>
+                                <td scope="row">12345-678</td>
+                                <td scope="row">fornecedorA@example.com</td>
+                                <td scope="row">01/01/1990</td>
+                                <td scope="row">
+                                    <div class="d-flex">
+                                        <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#edit-fornecedorModal"
+                                            class="btn btn-sm btn-outline-primary"><i title="Editar fornecedor..."
+                                                class="bi bi-pencil-square"></i></button>
+                                        <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                            data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                                title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Adicione mais linhas aqui seguindo a estrutura da tabela -->
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <span class="p-3">&copy; 2023 SGC - SISTEMA DE GERENCIAMENTO DE CONTAS - TRÊS MARIAS - MG - 39205-000 </span>
+    </footer>
+
+    <!-- jQuery e Bootstrap JS -->
+    <script src="/src/wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/src/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Importação do JavaScript do plug-in Datatable -->
+    <script src="/src/wwwroot/lib/data-tables/js/jquery.dataTables.min.js" asp-append-version="true"></script>
+    <script src="/src/wwwroot/lib/data-tables/js/dataTables.bootstrap5.min.js" asp-append-version="true"></script>
+
+    <!-- JavaScript Personalizado -->
+    <script src="/src/wwwroot/js/app.js"></script>
+</body>
+
+</html>

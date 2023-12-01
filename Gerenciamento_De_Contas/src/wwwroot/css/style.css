@@ -1,0 +1,215 @@
+html {
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    width: 100%;
+    height: 8vh;
+    position: absolute;
+    background-color: #007bff;
+    bottom: 0;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-title {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .card-text {
+    color: #666;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo personalizado para a tabela */
+  /* Estilo personalizado para a tabela */
+  .table-style {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 100%;
+  
+  }
+  
+  .table-style th,
+  .table-style td {
+    text-align: left;
+    border: 1px solid #ddd;
+    max-width: 150px; /* Tamanho máximo para as células */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona reticências para indicar texto cortado */
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    vertical-align: middle; /* Alinha o texto verticalmente no meio da célula */
+  }
+  
+  .table-style th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table-style tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Cor de fundo para linhas pares */
+  }
+  
+  .table-style tbody tr:hover {
+    background-color: #f5f5f5; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo para os botões na tabela */
+  .table-style button {
+    margin: 4px; /* Espaçamento entre os botões */
+    padding: 6px 12px; /* Espaçamento interno dos botões */
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Estilo para os botões de edição */
+  .table-style button.btn-outline-primary {
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  /* Estilo para os botões de exclusão */
+  .table-style button.btn-outline-danger {
+    color: #dc3545;
+    border: 1px solid #dc3545;
+  }
+  
+  /* Estilo para os modais */
+  .modal-content {
+    border-radius: 8px;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-header h3 {
+    margin-bottom: 0;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+
+  
+
+
+  
+  
+  form input {
+    height: 4.5vh;
+  }
+  
+  form label {
+    font-size: 0.7em;
+    font-weight: bold;
+  }
+  
+  .container-cadastro {
+    max-width: 40em;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.8em;
+  }
+  
+  .divider {
+    border-top: 1px solid #5d5c5c;
+  }
+  
+  button {
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
