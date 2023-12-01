@@ -1,0 +1,230 @@
+@{
+    ViewData["Title"] = "Listagem de Fornecedores";
+}
+
+<div class="container p-5">
+    <div class="card mb-5">
+    <div class="card-header bg-primary text-light">
+        <span class="fw-bold">@ViewData["Title"]</span>
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm table-bordered table-striped table-light table-style duo-table">
+                <thead class="table-light bg-danger border-light text-primary">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">CNPJ</th>
+                        <th scope="col">IE</th>
+                        <th scope="col">CPF</th>
+                        <th scope="col">RG</th>
+                        <th scope="col">Celular</th>
+                        <th scope="col">Telefone</th>
+                        <th scope="col">Endereço</th>
+                        <th scope="col">Número</th>
+                        <th scope="col">Bairro</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">Cidade</th>
+                        <th scope="col">CEP</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Data de Nascimento</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square fs-6"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash fs-6"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="table-light border-light">
+                        <td scope="row">1</td>
+                        <td scope="row">Fornecedor A</td>
+                        <td scope="row">1234567890</td>
+                        <td scope="row">123456789</td>
+                        <td scope="row">123.456.789-01</td>
+                        <td scope="row">1234567-8</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">(99) 9999-9999</td>
+                        <td scope="row">Rua Exemplo</td>
+                        <td scope="row">123</td>
+                        <td scope="row">Bairro Exemplo</td>
+                        <td scope="row">Estado Exemplo</td>
+                        <td scope="row">Cidade Exemplo</td>
+                        <td scope="row">12345-678</td>
+                        <td scope="row">fornecedorA@example.com</td>
+                        <td scope="row">01/01/1990</td>
+                        <td scope="row">
+                            <div class="d-flex">
+                                <button type="button" title="Editar fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#edit-fornecedorModal" class="btn btn-sm btn-outline-primary"><i
+                                    title="Editar fornecedor..." class="bi bi-pencil-square"></i></button>
+                            <button type="button" title="Excluir fornecedor..." data-bs-toggle="modal"
+                                data-bs-target="#deleteFornecedor" class="btn btn-sm btn-outline-danger"><i
+                                    title="Excluir fornecedor..." class="bi bi-trash"></i></button>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!-- Adicione mais linhas aqui seguindo a estrutura da tabela -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Edição -->
+<div class="modal fade" id="edit-fornecedorModal" tabindex="-1" role="dialog" aria-labelledby="edit-fornecedorModal"
+    aria-hidden="true">
+    <!-- Conteúdo do modal de edição -->
+</div>
+<!-- Fim do Modal de Edição -->
+
+<!-- Modal de Exclusão -->
+<div class="modal fade" id="deleteFornecedor" tabindex="-1" role="dialog" aria-labelledby="deleteFornecedor"
+    aria-hidden="true">
+    <!-- Conteúdo do modal de exclusão -->
+</div>
+<!-- Fim do Modal de Exclusão -->
+</div>

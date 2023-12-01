@@ -1,0 +1,64 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#">SGC - Sistema de Gerenciamento de Contas</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/src/pages/Home/Index.html">Início</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="contasDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Fornecedores
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="contasDropdown">
+                        <li><a class="dropdown-item" href="/src/pages/CadastroDeFornecedor/Index.html">Lista de Fornecedores</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/src/pages/CadastroDeFornecedor/Index.html">Controle de pagamento aos Fornecedores</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="contasDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Contas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="contasDropdown">
+                        <li><a class="dropdown-item" href="#">Listade Contas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Contas Pagas</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="relatoriosDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Relatórios
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="relatoriosDropdown">
+                        <li><a class="dropdown-item" href="#">Relatório Mensal</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Relatório Anual</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

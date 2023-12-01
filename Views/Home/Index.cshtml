@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container w-100 h-100 p-5">
+
+    <section class="mb-4">
+        <h1 class="fs-1 text-start">Bem-vindo ao Sistema de Gerenciamento de contas empresariais</h1>
+        <p>Este sistema permite gerenciar e controlar todas as contas a pagar da sua empresa de forma eficiente e organizada.</p>
+    </section>
+
+    <section class="mb-2">
+        <h2>Resumo das Contas</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Contas Pendentes</h3>
+                        <p class="card-text">Você possui 10 contas pendentes de pagamento.</p>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Contas Vencidas</h3>
+                        <p class="card-text">Existem 5 contas vencidas que precisam de atenção imediata.</p>
+                        <a href="#" class="btn btn-primary">Ver detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-2">
+        <h2>Próximos Passos</h2>
+        <p>Para começar, você pode adicionar novas contas a pagar, visualizar as contas existentes, gerar relatórios e
+            configurar as preferências do sistema.</p>
+        <a asp-action="Cadastro" asp-controller="Contas" class="btn btn-primary">Começar</a>
+    </section>
+
+</div>

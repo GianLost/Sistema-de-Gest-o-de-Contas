@@ -1,0 +1,8 @@
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\SistemDeGerenciamentoDeContas.exe
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\appsettings.Development.json
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\appsettings.json
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\libman.json
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\SistemDeGerenciamentoDeContas.dll
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\SistemDeGerenciamentoDeContas.deps.json
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\SistemDeGerenciamentoDeContas.runtimeconfig.json
+C:\Users\Administrador\Desktop\SistemDeGerenciamentoDeContas\bin\Debug\net6.0\publish\SistemDeGerenciamentoDeContas.pdb
